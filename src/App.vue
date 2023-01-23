@@ -1,60 +1,18 @@
 <template>
   <div id="app">
-    <b-card title="Tooltiptesting">
-      <b-card-text class="p-3"
-        >I'm baby do brunch la croix chicharrones sunt. Gatekeep lorem keffiyeh
-        everyday carry celiac, fit organic dolor. Paleo +1 lorem hashtag.
-        <mark v-b-tooltip.hover title="I'm a little tooltip"
-          >Scenester food truck artisan</mark
-        >
-        godard fit pop-up exercitation vinyl tilde. DSA chambray veniam, big
-        mood irure keytar snackwave
-        <mark v-b-tooltip.hover title="yummy kale chips">kale chips</mark>
-        coloring book enim quis semiotics whatever plaid culpa. Food truck id ad
-        banjo commodo meditation. Brunch artisan iPhone hashtag aliquip in
-        shabby chic listicle tonx franzen quis veniam. Jianbing craft beer
-        seitan you probably haven't heard of them tacos ethical quinoa subway
-        tile vice cillum. Echo park keffiyeh vexillologist, sus cornhole
-        adipisicing you probably haven't heard of them church-key anim nulla
-        meditation vaporware ea. Chartreuse deserunt echo park,
-        <mark v-b-tooltip.hover title="miso hipster">hashtag typewriter</mark>
-        officia scenester austin kinfolk etsy pabst paleo non aute seitan.
-        Hexagon viral lumbersexual photo booth bitters VHS gatekeep pork belly
-        consectetur la croix anim. Vibecession semiotics polaroid jianbing
-        kombucha stumptown. Vice jean shorts enim lo-fi godard synth mixtape
-        laboris laborum yuccie pinterest tote bag migas selfies. Ugh selfies
-        distillery raw denim. Dummy text? More like dummy thicc text,
-        amirite?</b-card-text
-      >
-      <b-card-text class="p-3">
-        <mark v-b-tooltip.hover title="tooltip"
-          >Cray tofu est shoreditch in vegan cupidatat cardigan sriracha
-          kickstarter officia fingerstache humblebrag adipisicing.</mark
-        >
-        Distillery in twee sed beard. Ramps lorem man braid scenester eu.
-        Consequat photo booth pitchfork crucifix sed food truck. Eu street art
-        reprehenderit, waistcoat humblebrag chia
-        <mark v-b-tooltip.hover title="tooltip">small batch swag</mark> salvia
-        schlitz. Selvage VHS semiotics vinyl, lorem coloring book tousled
-        chicharrones YOLO PBR&B edison bulb mlkshk slow-carb hoodie copper mug.
-        Tofu retro lumbersexual, sriracha JOMO locavore schlitz poke pitchfork
-        photo booth. Sartorial irony asymmetrical fixie authentic, jean shorts
-        chicharrones VHS ut. Sartorial esse tbh microdosing, waistcoat neutra
-        hashtag retro shaman do kogi taxidermy. Occaecat shabby chic crucifix,
-        tonx edison bulb freegan asymmetrical ascot gastropub lomo swag do vegan
-        in deserunt.
-        <mark v-b-tooltip.hover title="you're right, i haven't"
-          >You probably haven't heard of them</mark
-        >
-        pickled chambray, cray quis fashion axe nostrud next level. Asymmetrical
-        umami offal dolor gochujang leggings trust fund blog aesthetic live-edge
-        YOLO. Hashtag Hashtag post-ironic farm-to-table pitchfork.</b-card-text
-      >
+    <router-link to="/roles">Go to Bar</router-link>
+    <router-view></router-view>
+    <b-card title="Quiz">
+      <div>
+        <p>Ready?</p>
+      </div>
     </b-card>
     <b-card>
       <div>
         <h1 v-b-toggle.collapse-1>What should a CV look like?</h1>
         <b-collapse id="collapse-1">
+          <router-link to="/foo">Go to Bar</router-link>
+          <router-view></router-view>
           <div class="cv">
             <h2>FirstName LastName</h2>
             <h3
@@ -141,6 +99,22 @@
         </b-collapse>
       </div>
     </b-card>
+    <div>
+      <b-card>
+        <h1 v-b-toggle.collapse-2>Get workplace ready</h1>
+        <b-collapse id="collapse-2">
+          <p>insert ipsum here</p>
+        </b-collapse>
+      </b-card>
+    </div>
+    <div>
+      <b-card>
+        <h1 v-b-toggle.collapse-3>Confidence building</h1>
+        <b-collapse id="collapse-3">
+          <p>insert ipsum here</p>
+        </b-collapse>
+      </b-card>
+    </div>
   </div>
 </template>
 
